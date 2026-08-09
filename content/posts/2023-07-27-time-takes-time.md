@@ -4,6 +4,7 @@ aliases: ["/soberboots/2023/07/27/time-takes-time/"]
 layout: post
 title: "Time Takes Time"
 date: 2023-07-27 11:00:51
+draft: true
 cover:
   image: /soberboots/assets/uploads/2023/07/img_4448.png
   alt: "img_4448.png"
