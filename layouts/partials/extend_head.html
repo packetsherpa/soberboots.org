@@ -4,5 +4,13 @@
   .post-content img.alignleft { float: left; margin: .4rem 1.5rem 1rem 0; }
   .post-content img.alignright { float: right; margin: .4rem 0 1rem 1.5rem; }
   .post-content .missing-media { padding: 1rem; border: 1px solid var(--border); color: var(--secondary); }
-  @media (max-width: 600px) { .post-content img.alignleft, .post-content img.alignright { float: none; margin: 1rem 0; } }
+  .post-entry .entry-cover { overflow: hidden; }
+  .post-entry .entry-cover img { height: 11rem; object-fit: cover; }
+  .post-single .entry-cover { max-width: 44rem; margin-inline: auto; overflow: hidden; }
+  .post-single .entry-cover img { max-height: 26rem; object-fit: cover; }
+  @media (max-width: 600px) {
+    .post-content img.alignleft, .post-content img.alignright { float: none; margin: 1rem 0; }
+    .post-entry .entry-cover img { height: 9rem; }
+    .post-single .entry-cover img { max-height: 20rem; }
+  }
 </style>
