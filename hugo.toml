@@ -1,0 +1,69 @@
+baseURL = "https://soberboots.org/"
+locale = "en-US"
+title = "Walking in Sober Boots"
+timeZone = "America/New_York"
+enableRobotsTXT = true
+summaryLength = 36
+theme = "PaperMod"
+
+[params]
+  env = "production"
+  author = "Damien DeVille"
+  description = "Walking in Sober Boots: a recovery blog archived from 2013 through 2023."
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  mainSections = ["posts"]
+  images = ["soberboots/assets/uploads/2023/07/img_1290.jpg"]
+
+  [params.homeInfoParams]
+    Title = "Walking in Sober Boots"
+    Content = "Footfalls on a recovery path. An archive of writing from 2013–2023."
+
+  [[params.socialIcons]]
+    name = "rss"
+    title = "RSS"
+    url = "index.xml"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[pagination]
+  pagerSize = 15
+
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[services.rss]
+  limit = 30
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[[menus.main]]
+  name = "Archive"
+  pageRef = "/posts"
+  weight = 10
+
+[[menus.main]]
+  name = "Categories"
+  pageRef = "/categories"
+  weight = 20
+
+[[menus.main]]
+  name = "Tags"
+  pageRef = "/tags"
+  weight = 30
+
+[[menus.main]]
+  name = "About"
+  pageRef = "/about"
+  weight = 40

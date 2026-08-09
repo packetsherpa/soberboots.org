@@ -1,0 +1,5 @@
+<article class="first-entry home-info">
+  <header class="entry-header"><h1>{{ .Site.Params.homeInfoParams.Title | markdownify }}</h1></header>
+  <div class="entry-content"><p>{{ .Site.Params.homeInfoParams.Content | markdownify }}</p></div>
+  <footer class="entry-footer">Browse the complete archive below, or explore by <a href="{{ "categories/" | relURL }}">category</a> and <a href="{{ "tags/" | relURL }}">tag</a>.</footer>
+</article>
